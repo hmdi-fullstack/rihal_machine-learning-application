@@ -19,7 +19,7 @@ if "data" not in st.session_state:
 
 def load_dataset():
     data = pd.read_csv(
-        "../Competition_Dataset.csv", parse_dates=["Dates"])
+        "./Competition_Dataset.csv", parse_dates=["Dates"])
 
     # 📌 Extract Date Information
     data["Year"] = data["Dates"].dt.year
